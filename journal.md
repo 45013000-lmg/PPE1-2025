@@ -6,3 +6,6 @@
 - J'ai créé le fichier journal.md pour suivre mon progrès
 - J'ai créé le fichier .gitignore pour ignorer les fichiers inutiles
 - J'ai appris à utiliser les commandes git add, commit et push
+
+- J'ai appris l'application des commandes "wc" ">" ">>"
+- J'ai appris l'application des commandes "pipe"
