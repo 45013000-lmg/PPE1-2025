@@ -6,7 +6,7 @@ J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces 
 2.chemin absolu VS chemin relatif
 3.caracteres de replacement(*/?),ls,cd,cat,man..etc
 
-🥇 Difficultés:Apprentissage des options man(difficile pour la comprehension des mots techniques francais)
+🔧 Difficultés:Apprentissage des options man(difficile pour la comprehension des mots techniques francais)
 👍 J'utilise souvent man pour maîtriser l'expression professionnelle, mais je trouve plus efficace de mémoriser directement le code.
 
 
@@ -17,7 +17,7 @@ J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces 
 - J'ai créé le fichier .gitignore pour ignorer les fichiers inutiles
 - J'ai appris à utiliser les commandes git add, commit et push
 
-🥇 Difficultés: Confusion entre les différents états des fichiers (untracked, staged, committed)
+🔧 Difficultés: Confusion entre les différents états des fichiers (untracked, staged, committed)
   Erreurs de permission lors du premier git push
 👍 J'ai demandé conseil à mon prof et utilisé ChatGPT pour m'aider, m'entraînant assidûment en dehors des cours jusqu'à ce que je maîtrise parfaitement comment pull et pull le dépôt.
 
@@ -28,5 +28,7 @@ J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces 
 - J'ai découvert l'utilisation du pipe (|) pour chaîner des commandes et transmettre le résultat d'une commande à une autre.
 - J'ai également exploré grep pour rechercher des motifs dans des fichiers, et commencé à écrire mes premiers scripts Bash.
 
-🥇 Difficultés: Les instructions conditionnelles en Bash ont été expliquées très rapidement en cours. Je n'ai pas tout saisi immédiatement. 
+🔧 Difficultés: Les instructions conditionnelles en Bash ont été expliquées très rapidement en cours. Je n'ai pas tout saisi immédiatement. 
 👍 Je compte m'exercer en autonomie pour mieux les comprendre et les appliquer.
+
+⚠️ cat ./2016/* | grep Location | wc -l(✅) VS grep "Location" *.ann|grep "2016" |wc -l(❌) VS grep "Location" ./2016/*.ann | wc -l(✅)
