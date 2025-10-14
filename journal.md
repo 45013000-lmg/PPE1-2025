@@ -32,3 +32,19 @@ J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces 
 👍 Je compte m'exercer en autonomie pour mieux les comprendre et les appliquer.
 
 ⚠️ cat ./2016/* | grep Location | wc -l(✅) VS grep "Location" *.ann|grep "2016" |wc -l(❌) VS grep "Location" ./2016/*.ann | wc -l(✅)
+
+
+## Cour4
+- J’ai compris comment utiliser les boucles for pour répéter une même commande sur plusieurs années (2016, 2017, 2018), notamment dans le script comptes.sh.
+- J’ai découvert la gestion des arguments dans les scripts ($1, $2, $#) et comment adapter le comportement du programme selon les paramètres fournis.
+→ Exemple : ./compte_par_type.sh 2017 Location pour compter uniquement les entités "Location" de 2017.
+- J’ai appris à valider les arguments d’entrée avec des conditions if et des tests comme [ $# -ne 2 ] ou [ ! -d "$annee" ], afin d’éviter les erreurs d’exécution.
+- J’ai aussi utilisé la commande find pour parcourir les sous-dossiers (par exemple 2016/01, 2016/02, etc.) et traiter les fichiers .ann de manière récursive.
+- J’ai compris comment formater la sortie et créer des scripts plus complets comme compte_par_type_par_an.sh et compte_lieux.sh, capables de produire des classements automatiques des lieux.
+
+🔧 Difficultés : Au début, j’avais du mal à comprendre la syntaxe des conditions if en Bash et la différence entre les crochets [ ] et les variables $#, $0, etc.
+   De plus, j’ai rencontré une erreur avec grep ("Is a directory") à cause de la structure des sous-dossiers.
+
+👍 Solutions et progrès : Après le cours, j’ai relu les diapositives et consulté des ressources en ligne pour mieux comprendre la logique du if et la validation des arguments.
+   J’ai également corrigé mon script en utilisant find à la place de grep *.ann, ce qui m’a permis de traiter correctement les fichiers dans tous les sous-dossiers.
+   Je me sens maintenant beaucoup plus à l’aise avec les bases du Bash et la construction de scripts paramétrés.
