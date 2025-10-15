@@ -9,22 +9,16 @@ annee=$1
 mois=$2
 nom=$3
 
-if [ -z "$./$annee/$mois/*.ann" ]; then
-    echo "Aucun fichier trouvé pour ${annee}-${mois}"
+chemin="./${annee}/${mois}/*.ann"
+fichiers=$(ls $chemin)
+
+if [ -z "$fichiers" ]; then
+    echo " Aucun fichier trouvé pour le chemin : $chemin"
     exit 1
 fi
 
 
-
-
-if [ "$annee" = "*" ]; then
-    annee="*"
-fi
-if [ "$mois" = "*" ]; then
-    mois="*"
-fi
-
-grep -h "Location" ./$annee/$mois/*.ann |cut -f3| sort | uniq -c | sort -nr | head -n $nom
+grep -h "Location" $chemin | cut -f3 | sort | uniq -c | sort -nr | head -n $nom
 
 # grep -h "Location"→ 提取出所有包含 “Location” 的行
 # cut -f3 → 从这些行里只保留第 3 列
