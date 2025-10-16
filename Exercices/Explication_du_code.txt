@@ -1,0 +1,28 @@
+#!/usr/bin/bash
+
+if [ $# -ne 1 ]        #Vérifie qu’un seul argument (le nom du fichier) a été fourni, sinon le programme s’arrête.
+then
+  echo "ce programme demande un argument"
+    exit
+fi
+
+FICHIER_URLS=$1
+OK=0
+NOK=0                 #Initialise les compteurs pour les lignes valides et non valides.
+
+while read -r LINE;   #Commence une boucle pour lire le fichier ligne par ligne.
+do
+    echo "la ligne: $LINE"   #Affiche la ligne lue actuellement.
+    if [[ $LINE =~ ^https?:// ]]   #Vérifie si la ligne ressemble à une URL (commençant par http ou https).
+    then
+      echo "ressemble à une URL valide"   #Si la ligne correspond, elle est considérée comme une URL valide.
+      OK=$(expr $OK + 1)
+    else
+      echo "ne ressemble pas à une URL valide"  #Sinon, la ligne est considérée comme douteuse (non valide).
+      NOK=$(expr $NOK + 1)
+    fi
+done < $FICHIER_URLS   #Fin de la boucle : lit toutes les lignes du fichier.
+echo "$OK URLs et $NOK lignes douteuses"  #Affiche le nombre d’URLs valides et de lignes douteuses.
+
+#Ce script sert à : 👉 lire chaque ligne d’un fichier texte et vérifier si elle correspond à une URL valide (commençant par http:// ou https://).
+À la fin, il affiche combien de lignes sont valides et combien sont douteuses.
