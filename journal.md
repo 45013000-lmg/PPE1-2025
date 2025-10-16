@@ -53,8 +53,8 @@ J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces 
 
 <img width="1098" height="1044" alt="image" src="https://github.com/user-attachments/assets/7fc686f0-5acc-4334-a896-60951c818e33" />
 
--Ce script sert à : 👉 lire chaque ligne d’un fichier texte et vérifier si elle correspond à une URL valide (commençant par http:// ou https://).
--À la fin, il affiche combien de lignes sont valides et combien sont douteuses.
+- Ce script sert à : 👉 lire chaque ligne d’un fichier texte et vérifier si elle correspond à une URL valide (commençant par http:// ou https://).
+- À la fin, il affiche combien de lignes sont valides et combien sont douteuses.
 
 - Vérifie qu’un seul argument (le nom du fichier) a été fourni, sinon le programme s’arrête.
 Initialise les compteurs pour les lignes valides et non valides.
