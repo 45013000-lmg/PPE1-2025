@@ -49,7 +49,7 @@ J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces 
    J’ai également corrigé mon script en utilisant find à la place de grep *.ann, ce qui m’a permis de traiter correctement les fichiers dans tous les sous-dossiers.
    Je me sens maintenant beaucoup plus à l’aise avec les bases du Bash et la construction de scripts paramétrés.
 
-###Explication_du_code
+### Explication_du_code
 
 if [ $# -ne 1 ]        Vérifie qu’un seul argument (le nom du fichier) a été fourni, sinon le programme s’arrête.
 then
