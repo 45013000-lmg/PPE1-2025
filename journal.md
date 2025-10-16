@@ -77,4 +77,4 @@ echo "$OK URLs et $NOK lignes douteuses"  Affiche le nombre d’URLs valides et 
 
 Ce script sert à : 👉 lire chaque ligne d’un fichier texte et vérifier si elle correspond à une URL valide (commençant par http:// ou https://).
 À la fin, il affiche combien de lignes sont valides et combien sont douteuses.
-
+<img width="1098" height="1044" alt="image" src="https://github.com/user-attachments/assets/f9765119-1daa-43be-a8a4-0bb283d3e8ba" />
