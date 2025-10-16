@@ -48,3 +48,34 @@ J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces 
 👍 Solutions et progrès : Après le cours, j’ai relu les diapositives et consulté des ressources en ligne pour mieux comprendre la logique du if et la validation des arguments.
    J’ai également corrigé mon script en utilisant find à la place de grep *.ann, ce qui m’a permis de traiter correctement les fichiers dans tous les sous-dossiers.
    Je me sens maintenant beaucoup plus à l’aise avec les bases du Bash et la construction de scripts paramétrés.
+
+###Explication_du_code
+#!/usr/bin/bash
+
+if [ $# -ne 1 ]        #Vérifie qu’un seul argument (le nom du fichier) a été fourni, sinon le programme s’arrête.
+then
+  echo "ce programme demande un argument"
+    exit
+fi
+
+FICHIER_URLS=$1
+OK=0
+NOK=0                 #Initialise les compteurs pour les lignes valides et non valides.
+
+while read -r LINE;   #Commence une boucle pour lire le fichier ligne par ligne.
+do
+    echo "la ligne: $LINE"   #Affiche la ligne lue actuellement.
+    if [[ $LINE =~ ^https?:// ]]   #Vérifie si la ligne ressemble à une URL (commençant par http ou https).
+    then
+      echo "ressemble à une URL valide"   #Si la ligne correspond, elle est considérée comme une URL valide.
+      OK=$(expr $OK + 1)
+    else
+      echo "ne ressemble pas à une URL valide"  #Sinon, la ligne est considérée comme douteuse (non valide).
+      NOK=$(expr $NOK + 1)
+    fi
+done < $FICHIER_URLS   #Fin de la boucle : lit toutes les lignes du fichier.
+echo "$OK URLs et $NOK lignes douteuses"  #Affiche le nombre d’URLs valides et de lignes douteuses.
+
+#Ce script sert à : 👉 lire chaque ligne d’un fichier texte et vérifier si elle correspond à une URL valide (commençant par http:// ou https://).
+À la fin, il affiche combien de lignes sont valides et combien sont douteuses.
+
