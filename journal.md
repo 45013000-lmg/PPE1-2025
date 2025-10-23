@@ -1,10 +1,10 @@
 # Journal de bord du projet encadré
 
 ## Cour1 
--J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces opérations soient nouvelles pour moi, j'ai compris leur importance pour la suite du cours. Je dois encore m'entraîner à la maison pour mieux les maîtriser.
- -1.ficher,dossier,dossier parent(..),dossier personnel(~),racine(/),dossier courant(pwd)
- -2.chemin absolu VS chemin relatif
- -3.caracteres de replacement(*/?),ls,cd,cat,man..etc
+- J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces opérations soient nouvelles pour moi, j'ai compris leur importance pour la suite du cours. Je dois encore m'entraîner à la maison pour mieux les maîtriser.
+ - 1.ficher,dossier,dossier parent(..),dossier personnel(~),racine(/),dossier courant(pwd)
+ - 2.chemin absolu VS chemin relatif
+ - 3.caracteres de replacement(*/?),ls,cd,cat,man..etc
 
 🔧 Difficultés:Apprentissage des options man(difficile pour la comprehension des mots techniques francais)
 👍 J'utilise souvent man pour maîtriser l'expression professionnelle, mais je trouve plus efficace de mémoriser directement le code.
@@ -67,31 +67,31 @@ Initialise les compteurs pour les lignes valides et non valides.
 - Affiche le nombre d’URLs valides et de lignes douteuses.
 
 ## Cour5
--Cette semaine, nous avons commencé à travailler sur le mini-projet, qui consiste à écrire un script Bash capable de lire un fichier contenant plusieurs URL, d’en récupérer le contenu et d’en extraire des informations pour produire un tableau.
+- Cette semaine, nous avons commencé à travailler sur le mini-projet, qui consiste à écrire un script Bash capable de lire un fichier contenant plusieurs URL, d’en récupérer le contenu et d’en extraire des informations pour produire un tableau.
 C’est la première fois que je travaille sur un script un peu long et structuré, et j’ai compris l’importance de bien organiser le code pour éviter les erreurs.
--J’ai appris à utiliser curl et lynx, deux outils essentiels pour interagir avec le web depuis le terminal.
+- J’ai appris à utiliser curl et lynx, deux outils essentiels pour interagir avec le web depuis le terminal.
 Au début, j’avais du mal à faire la différence entre eux :
 je pensais qu’ils faisaient à peu près la même chose.
 Maintenant, je comprends que curl sert à récupérer le code source ou à envoyer des requêtes HTTP, alors que lynx est un navigateur en ligne de commande qui permet d’obtenir uniquement le texte visible d’une page web, sans les balises HTML.
 Cela m’a permis de mieux visualiser la structure des pages et de comprendre la logique d’extraction des données.
--J’ai aussi progressé dans la validation des arguments dans les scripts Bash.
+- J’ai aussi progressé dans la validation des arguments dans les scripts Bash.
 Je sais maintenant utiliser des tests comme [ $# -ne 1 ] pour vérifier le nombre d’arguments fournis, et [ ! -f "$1" ] pour vérifier si le fichier passé en paramètre existe réellement.
 J’ai mieux compris la signification de variables comme $0 (nom du script), $1 (premier argument) et $# (nombre d’arguments).
 Ces notions me paraissaient abstraites au début, mais en les pratiquant dans le mini-projet, elles deviennent beaucoup plus claires.
--J’ai découvert dans l’éditeur Kate une fonction très utile : l’analyse automatique de script (ShellCheck).
+- J’ai découvert dans l’éditeur Kate une fonction très utile : l’analyse automatique de script (ShellCheck).
 Cet outil signale les erreurs, les mauvaises pratiques ou les variables non utilisées dans le code.
 Grâce à lui, j’ai pu corriger plusieurs petits détails et rendre mon script plus propre et plus lisible.
--En parallèle, j’ai commencé à revoir les bases de HTML, car nous devons comprendre la structure d’une page web pour pouvoir extraire les bonnes informations.
+- En parallèle, j’ai commencé à revoir les bases de HTML, car nous devons comprendre la structure d’une page web pour pouvoir extraire les bonnes informations.
 Je me rends compte que je ne maîtrise pas encore bien ce langage, notamment les balises <head>, <body> ou <title>.
 Je compte utiliser des ressources en ligne pour approfondir mes connaissances.
 Plus j’avance, plus je réalise que j’ai encore beaucoup à apprendre, mais cela me motive à continuer.
 
 🔧 Difficultés :
--Le cours sur curl et lynx allait un peu vite, et je n’ai pas encore eu le temps de bien maîtriser toutes les options, surtout celles de curl comme -i, -o ou -I.
+- Le cours sur curl et lynx allait un peu vite, et je n’ai pas encore eu le temps de bien maîtriser toutes les options, surtout celles de curl comme -i, -o ou -I.
 De plus, certains sites web dans la liste d’URL ne sont plus accessibles, ce qui provoque des erreurs avec Lynx — mais cela m’a aussi appris à être patiente et à anticiper les cas où un site ne répond pas.
 
 👍 Ressenti personnel :
--Je sens que je deviens plus autonome dans la compréhension des scripts Bash et des commandes Linux.
+- Je sens que je deviens plus autonome dans la compréhension des scripts Bash et des commandes Linux.
 Même si j’ai encore des lacunes (notamment en HTML et en manipulation web), je suis fière de mes progrès.
 Chaque exercice me montre un nouveau pan du fonctionnement d’Internet et du traitement automatique du texte.
 Cette semaine m’a donné envie de poursuivre mes efforts et de mieux maîtriser les outils du web et de la programmation.
