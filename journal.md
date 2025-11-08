@@ -107,8 +107,8 @@ encodage=$(cat metadata.tmp | head -n 1 | grep -E -o "charset=.*" | cut -d= -f2)
 response=$(cat metadata.tmp | tail -n 1)
 La première commande récupère le nom du jeu de caractères (charset), et la deuxième récupère le code de réponse HTTP.Cela m’a permis de comprendre comment analyser pas à pas les métadonnées d’une page web dans un script Bash.
 
-- En parallèle, nous avons également étudié la structure de base du langage HTML, avec les balises <head> et <body>.
-J’ai appris à transformer un tableau CSV en une table HTML simple à l’aide des balises <table>, <tr>, <th> et <td>.
+- En parallèle, nous avons également étudié la structure de base du langage HTML, avec les balises head et body.
+J’ai appris à transformer un tableau CSV en une table HTML simple à l’aide des balises table, tr, th et td.
 
 🔧 Difficultés :
 - Je trouve que certaines options des commandes (surtout celles de curl sont encore difficiles à mémoriser et à distinguer.Elles sont très nombreuses et parfois je m’y perds un peu.
