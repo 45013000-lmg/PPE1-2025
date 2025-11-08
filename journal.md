@@ -111,9 +111,8 @@ La première commande récupère le nom du jeu de caractères (charset), et la d
 J’ai appris à transformer un tableau CSV en une table HTML simple à l’aide des balises <table>, <tr>, <th> et <td>.
 
 🔧 Difficultés :
-Je trouve que certaines options des commandes (surtout celles de curl) sont encore difficiles à mémoriser et à distinguer.
-Elles sont très nombreuses et parfois je m’y perds un peu.
+- Je trouve que certaines options des commandes (surtout celles de curl sont encore difficiles à mémoriser et à distinguer.Elles sont très nombreuses et parfois je m’y perds un peu.
 
-👍 Progrès et intentions :
-Je compte réorganiser mes notes pour mieux classer les options importantes et leurs exemples d’utilisation.
+👍 Ressenti personnel :
+- Je compte réorganiser mes notes pour mieux classer les options importantes et leurs exemples d’utilisation.
 Cela m’aidera à devenir plus efficace et à mieux comprendre la logique de chaque commande.
