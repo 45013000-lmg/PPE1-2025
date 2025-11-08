@@ -96,7 +96,7 @@ Même si j’ai encore des lacunes (notamment en HTML et en manipulation web), j
 Chaque exercice me montre un nouveau pan du fonctionnement d’Internet et du traitement automatique du texte.
 Cette semaine m’a donné envie de poursuivre mes efforts et de mieux maîtriser les outils du web et de la programmation.
 
-## Cour5
+## Cour6
 - Cette semaine, nous avons commencé par corriger et commenter les exercices de la semaine précédente.
 J’ai revu en détail la commande curl et j’ai mieux compris le rôle de ses nombreuses options, notamment à travers la ligne suivante :
 curl -o tmp.txt -k -i -s -L -w "%{content_type}\n%{http_code}" ${line} > metadata.tmp
@@ -107,7 +107,7 @@ Voici ce que j’ai appris :
 -s : exécute en mode silencieux (sans afficher la progression).
 -L : suit automatiquement les redirections.
 -w "%{content_type}\n%{http_code}" : écrit dans la sortie le type de contenu et le code de réponse HTTP (sur deux lignes).
-> metadata.tmp : envoie ces informations dans un fichier temporaire metadata.tmp.
+metadata.tmp : envoie ces informations dans un fichier temporaire metadata.tmp.
 J’ai ensuite appris à extraire ces informations à l’aide de commandes Bash :
 encodage=$(cat metadata.tmp | head -n 1 | grep -E -o "charset=.*" | cut -d= -f2)
 response=$(cat metadata.tmp | tail -n 1)
