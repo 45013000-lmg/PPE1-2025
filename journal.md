@@ -95,3 +95,33 @@ De plus, certains sites web dans la liste d’URL ne sont plus accessibles, ce q
 Même si j’ai encore des lacunes (notamment en HTML et en manipulation web), je suis fière de mes progrès.
 Chaque exercice me montre un nouveau pan du fonctionnement d’Internet et du traitement automatique du texte.
 Cette semaine m’a donné envie de poursuivre mes efforts et de mieux maîtriser les outils du web et de la programmation.
+
+## Cour5
+- Cette semaine, nous avons commencé par corriger et commenter les exercices de la semaine précédente.
+J’ai revu en détail la commande curl et j’ai mieux compris le rôle de ses nombreuses options, notamment à travers la ligne suivante :
+curl -o tmp.txt -k -i -s -L -w "%{content_type}\n%{http_code}" ${line} > metadata.tmp
+Voici ce que j’ai appris :
+-o tmp.txt : enregistre le contenu de la page web dans un fichier temporaire.
+-k : ignore les erreurs liées aux certificats SSL.
+-i : inclut les en-têtes HTTP dans la sortie.
+-s : exécute en mode silencieux (sans afficher la progression).
+-L : suit automatiquement les redirections.
+-w "%{content_type}\n%{http_code}" : écrit dans la sortie le type de contenu et le code de réponse HTTP (sur deux lignes).
+> metadata.tmp : envoie ces informations dans un fichier temporaire metadata.tmp.
+J’ai ensuite appris à extraire ces informations à l’aide de commandes Bash :
+encodage=$(cat metadata.tmp | head -n 1 | grep -E -o "charset=.*" | cut -d= -f2)
+response=$(cat metadata.tmp | tail -n 1)
+La première commande récupère le nom du jeu de caractères (charset),
+et la deuxième récupère le code de réponse HTTP.
+Cela m’a permis de comprendre comment analyser pas à pas les métadonnées d’une page web dans un script Bash.
+
+- En parallèle, nous avons également étudié la structure de base du langage HTML, avec les balises <head> et <body>.
+J’ai appris à transformer un tableau CSV en une table HTML simple à l’aide des balises <table>, <tr>, <th> et <td>.
+
+🔧 Difficultés :
+Je trouve que certaines options des commandes (surtout celles de curl) sont encore difficiles à mémoriser et à distinguer.
+Elles sont très nombreuses et parfois je m’y perds un peu.
+
+👍 Progrès et intentions :
+Je compte réorganiser mes notes pour mieux classer les options importantes et leurs exemples d’utilisation.
+Cela m’aidera à devenir plus efficace et à mieux comprendre la logique de chaque commande.
