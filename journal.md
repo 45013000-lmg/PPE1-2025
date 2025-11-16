@@ -116,3 +116,30 @@ J’ai appris à transformer un tableau CSV en une table HTML simple à l’aide
 👍 Ressenti personnel :
 - Je compte réorganiser mes notes pour mieux classer les options importantes et leurs exemples d’utilisation.
 Cela m’aidera à devenir plus efficace et à mieux comprendre la logique de chaque commande.
+
+## Cour7
+- Cette semaine, nous avons étudié les bases du HTML et du CSS.
+J’ai appris à créer une page web depuis zéro et à la rendre plus esthétique à l’aide de différentes techniques de mise en forme.
+Nous avons revu la structure fondamentale d’une page, avec les balises html, head et body, et appris à insérer du texte, des titres, des liens ou des images.
+
+- Nous avons découvert trois manières principales de styliser une page web :
+1️⃣ en utilisant les balises HTML comme b, i, em ou strong pour mettre en valeur du texte ;
+2️⃣ en ajoutant des styles internes dans la section head avec la balise style ;
+3️⃣ en créant un fichier CSS externe, relié à la page grâce à <link>, pour mieux séparer le contenu et la présentation.
+
+- Nous avons également exploré le framework Bulma, une bibliothèque CSS très complète qui propose de nombreuses classes prêtes à l’emploi pour créer rapidement des boutons, des menus, des sections, etc.
+Cependant, Bulma contient tellement de styles que j’ai passé beaucoup de temps à chercher et tester les bonnes classes à utiliser.
+C’est parfois un peu déroutant, mais très intéressant à manipuler.
+
+- Enfin, nous avons appris à utiliser GitHub Pages pour publier nos pages web en ligne.
+C’était la première fois que je mettais mon propre site en ligne via GitHub, et voir ma page s’afficher sur Internet m’a donné une vraie satisfaction.
+
+🔧 Difficultés :
+Lors de la rédaction du code HTML, j’ai trouvé que la gestion des niveaux et des balises imbriquées était particulièrement difficile.
+Il faut toujours vérifier les ouvertures et les fermetures de balises, et il m’est souvent arrivé de devoir corriger plusieurs fois la structure du code.
+C’est un travail qui demande rigueur et patience.
+
+👍 Ressenti personnel :
+Ce cours m’a permis de mieux comprendre la logique du développement web et la complémentarité entre HTML et CSS.
+Même si la mise en page demande beaucoup d’essais et d’ajustements, c’est très gratifiant de voir son propre site devenir plus clair et plus esthétique.
+Je souhaite continuer à pratiquer et à mieux maîtriser les outils comme Bulma pour concevoir des pages plus professionnelles à l’avenir.
