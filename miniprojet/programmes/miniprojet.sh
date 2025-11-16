@@ -34,6 +34,22 @@ lineno=1            #compteur de lignes (numéro)
 echo -e "Numéro\tUrl\tHttp response\tEncodage\tNb_Mots">$FICHIER_SORTIE
 # Cette ligne écrit les en-têtes des colonnes dans le fichier de sortie :
 # Numéro | URL | Code HTTP | Encodage | Nombre de mots.
+echo -e "
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Résultats du mini-projet</title>
+</head>
+
+<body>
+  <h1>Résultats du mini-projet</h1>
+  <table border="1">
+    <tr>
+      <th>Numéro</th>
+      <th>Url</th>
+      <th>Http response</th>
+      <th>Encodage</th>
+      <th>Nb_Mots</th>"
 
 while read -r line;
 do
@@ -52,6 +68,21 @@ do
 # -o：只输出匹配到的部分，而不是整行
     response=$(cat metadata.tmp | tail -n 1)
     nb_mots=$(cat tmp.txt | lynx -dump -stdin -nolist | wc -w)
+    echo -e "
+    <tr>
+      <td>$lineno</td>
+      <td>$line</td>
+      <td>$response</td>
+      <td>$encodage</td>
+      <td>$nb_mots</td>
+    </tr>"
+
 echo -e "${lineno}\t${line}\t${response}\t${encodage}\t${nb_mots}">>$FICHIER_SORTIE
+
 lineno=$(expr $lineno + 1)
 done < "$1"
+echo -e "
+  </table>
+</body>
+</html>
+"
