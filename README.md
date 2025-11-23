@@ -2,7 +2,6 @@
 Programmation et Projet Encadré 1
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis arcu nibh. Praesent ac orci turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dui magna, posuere ac elementum vel, lacinia in lacus. Morbi et dui mauris. Mauris vestibulum mauris a risus porttitor mollis. Donec viverra auctor dolor nec fermentum. Curabitur tincidunt bibendum nunc. Maecenas ut scelerisque libero. Maecenas eu nisl eu risus placerat gravida eu sed tellus. Proin bibendum venenatis libero, ut facilisis nulla placerat sed. Morbi nec eros tellus. Nullam nulla mi, viverra ut tristique ac, fermentum at elit. Praesent rutrum nibh tellus, vitae bibendum sem laoreet non. Mauris convallis, turpis ac molestie lobortis, purus eros vulputate odio, in maximus tortor velit ut odio. Phasellus iaculis libero at sem aliquet, a cursus orci blandit.
 
 Nam venenatis velit vitae neque sollicitudin vulputate. Quisque porta sapien in consequat rutrum. Donec nec scelerisque ligula, id gravida ex. Ut semper dignissim felis vitae sollicitudin. Maecenas turpis erat, euismod quis sem vel, maximus pretium metus. Morbi eget laoreet libero, eget facilisis libero. Morbi ante tortor, iaculis in finibus sed, finibus nec justo. Aliquam tempus sem interdum est pulvinar, nec bibendum ante ornare. Donec condimentum massa quis lectus pellentesque, hendrerit dignissim nisl consectetur.
 
