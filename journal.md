@@ -1,6 +1,6 @@
 # Journal de bord du projet encadré
 
-## Cour1 
+## Cours 1 
 - J'ai découvert les bases de Linux et ses commandes fondamentales. Bien que ces opérations soient nouvelles pour moi, j'ai compris leur importance pour la suite du cours. Je dois encore m'entraîner à la maison pour mieux les maîtriser.
  - 1.ficher,dossier,dossier parent(..),dossier personnel(~),racine(/),dossier courant(pwd)
  - 2.chemin absolu VS chemin relatif
@@ -10,7 +10,7 @@
 👍 J'utilise souvent man pour maîtriser l'expression professionnelle, mais je trouve plus efficace de mémoriser directement le code.
 
 
-## Cour2
+## Cours 2
 - J'ai créé un nouveau dépôt sur GitHub
 - J'ai cloné le dépôt en local avec git clone
 - J'ai créé le fichier journal.md pour suivre mon progrès
@@ -22,7 +22,7 @@
 👍 J'ai demandé conseil à mon prof et utilisé ChatGPT pour m'aider, m'entraînant assidûment en dehors des cours jusqu'à ce que je maîtrise parfaitement comment pull et pull le dépôt.
 
 
-## Cour3
+## Cours 3
 - J'ai appris à utiliser la commande wc pour compter les lignes, mots et caractères dans un fichier.
 - J'ai compris la différence entre > (redirection écrasante) et >> (redirection ajout).
 - J'ai découvert l'utilisation du pipe (|) pour chaîner des commandes et transmettre le résultat d'une commande à une autre.
@@ -34,7 +34,7 @@
 ⚠️ cat ./2016/* | grep Location | wc -l(✅) VS grep "Location" *.ann|grep "2016" |wc -l(❌) VS grep "Location" ./2016/*.ann | wc -l(✅)
 
 
-## Cour4
+## Cours 4
 - J’ai compris comment utiliser les boucles for pour répéter une même commande sur plusieurs années (2016, 2017, 2018), notamment dans le script comptes.sh.
 - J’ai découvert la gestion des arguments dans les scripts ($1, $2, $#) et comment adapter le comportement du programme selon les paramètres fournis.
 → Exemple : ./compte_par_type.sh 2017 Location pour compter uniquement les entités "Location" de 2017.
@@ -66,7 +66,7 @@ Initialise les compteurs pour les lignes valides et non valides.
 - Fin de la boucle : lit toutes les lignes du fichier.
 - Affiche le nombre d’URLs valides et de lignes douteuses.
 
-## Cour5
+## Cours 5
 - Cette semaine, nous avons commencé à travailler sur le mini-projet, qui consiste à écrire un script Bash capable de lire un fichier contenant plusieurs URL, d’en récupérer le contenu et d’en extraire des informations pour produire un tableau.
 C’est la première fois que je travaille sur un script un peu long et structuré, et j’ai compris l’importance de bien organiser le code pour éviter les erreurs.
 - J’ai appris à utiliser curl et lynx, deux outils essentiels pour interagir avec le web depuis le terminal.
@@ -96,7 +96,7 @@ Même si j’ai encore des lacunes (notamment en HTML et en manipulation web), j
 Chaque exercice me montre un nouveau pan du fonctionnement d’Internet et du traitement automatique du texte.
 Cette semaine m’a donné envie de poursuivre mes efforts et de mieux maîtriser les outils du web et de la programmation.
 
-## Cour6
+## Cours 6
 - Cette semaine, nous avons commencé par corriger et commenter les exercices de la semaine précédente.
 J’ai revu en détail la commande curl et j’ai mieux compris le rôle de ses nombreuses options, notamment à travers la ligne suivante :
 “curl -o tmp.txt -k -i -s -L -w "%{content_type}\n%{http_code}" ${line} > metadata.tmp”
@@ -117,7 +117,7 @@ J’ai appris à transformer un tableau CSV en une table HTML simple à l’aide
 - Je compte réorganiser mes notes pour mieux classer les options importantes et leurs exemples d’utilisation.
 Cela m’aidera à devenir plus efficace et à mieux comprendre la logique de chaque commande.
 
-## Cour7
+## Cours 7
 - Cette semaine, nous avons étudié les bases du HTML et du CSS.
 J’ai appris à créer une page web depuis zéro et à la rendre plus esthétique à l’aide de différentes techniques de mise en forme.
 Nous avons revu la structure fondamentale d’une page, avec les balises html, head et body, et appris à insérer du texte, des titres, des liens ou des images.
@@ -143,3 +143,34 @@ C’est un travail qui demande rigueur et patience.
 Ce cours m’a permis de mieux comprendre la logique du développement web et la complémentarité entre HTML et CSS.
 Même si la mise en page demande beaucoup d’essais et d’ajustements, c’est très gratifiant de voir son propre site devenir plus clair et plus esthétique.
 Je souhaite continuer à pratiquer et à mieux maîtriser les outils comme Bulma pour concevoir des pages plus professionnelles à l’avenir.
+
+## Cours 8
+- Cette semaine, nous avons étudié la gestion d’un dépôt GitHub en travail collaboratif, ainsi que les erreurs les plus courantes lorsqu’on travaille à plusieurs.
+Le cours portait surtout sur la manière de maintenir la synchronisation entre le dépôt local et le dépôt distant, et sur les bonnes pratiques à adopter lorsqu’un push ou un pull échoue.
+
+- Nous avons approfondi plusieurs commandes essentielles de Git :
+git reset (annuler un commit ou revenir à un état antérieur)
+git checkout (changer de branche, restaurer un fichier, consulter un ancien commit)
+git stash (mettre de côté des modifications temporaires)
+et la notion de HEAD, qui représente la position actuelle dans l’historique du projet.
+
+- La partie la plus difficile pour moi a été git checkout, car cette commande possède plusieurs fonctions et je les confondais souvent.
+Après avoir révisé le cours et cherché des explications supplémentaires, je comprends maintenant clairement ses trois usages principaux :
+restaurer un fichier pour annuler les modifications locales,
+changer de branche,
+explorer l’état d’un commit antérieur.
+
+Pendant le cours, tout cela restait assez abstrait, mais les exercices m’ont vraiment aidée à réviser et à appliquer ce que j’avais appris.
+Je commence à mieux interpréter les messages d’erreur de Git, et je sais quelle commande utiliser selon la situation.
+
+- Par exemple, lorsqu’un push échoue parce que le dépôt local et le dépôt distant ne sont pas synchronisés, je sais désormais suivre la procédure correcte :
+git fetch pour voir les différences,
+git reset HEAD~1 pour annuler le dernier commit local,
+git stash pour sauvegarder mes modifications,
+git pull pour récupérer la version à jour du dépôt distant,
+git stash pop pour réappliquer mes changements,
+et utiliser régulièrement git status pour vérifier l’état du projet.
+
+- Grâce à ces exercices, je me sens beaucoup plus à l’aise avec Git.
+Je ne me contente plus d’exécuter les commandes mécaniquement : je comprends désormais leur logique et leur rôle dans la gestion d’un projet collaboratif.
+Même si Git reste parfois abstrait, la pratique m’aide à progresser de manière solide et régulière.
