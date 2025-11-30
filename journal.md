@@ -174,3 +174,25 @@ et utiliser régulièrement git status pour vérifier l’état du projet.
 - Grâce à ces exercices, je me sens beaucoup plus à l’aise avec Git.
 Je ne me contente plus d’exécuter les commandes mécaniquement : je comprends désormais leur logique et leur rôle dans la gestion d’un projet collaboratif.
 Même si Git reste parfois abstrait, la pratique m’aide à progresser de manière solide et régulière.
+
+## Cours 9
+
+- Cette semaine, nous avons appris à créer et gérer des environnements virtuels Python**, afin de séparer proprement les dépendances de différents projets.
+J’ai découvert l’utilisation de venv, ainsi que les commandes pour activer (source bin/activate) et désactiver (deactivate) un environnement virtuel.
+Nous avons également comparé les outils pip et uv, et compris leurs différences en termes de rapidité et de gestion des paquets.
+
+- Un autre élément important du cours a été l’utilisation de **wordcloud_cli** pour générer des nuages de mots.
+J’ai appris à personnaliser une wordcloud en modifiant : les couleurs, les dimensions, les masques, la police, et la liste de stopwords. C’était la première fois que je générais une visualisation directement depuis le terminal, ce que j’ai trouvé à la fois pratique et motivant.
+
+- Nous avons ensuite réalisé un exercice de tokenisation, en utilisant un environnement virtuel Python pour découper un fichier texte en tokens.
+C’est une étape de base mais essentielle pour les analyses linguistiques automatisées.
+
+- En fin de séance, nous avons découvert le logiciel de textométrie Trameur.
+J’ai compris que, pour que ce type d’outil fonctionne correctement, il faut au préalable **structurer le texte**, par exemple en XML ou en marquant explicitement les divisions textuelles.
+Nous avons également abordé la loi hypergéométrique, utilisée en textométrie. Cette partie m’a semblé assez abstraite, et je pense qu’il me faudra une révision supplémentaire pour bien comprendre son application.
+
+🔧 Difficultés : Les notions statistiques liées à la loi hypergéométrique restent complexes pour moi, et l’exigence de structuration des textes dans Trameur demande une certaine rigueur. Je dois encore approfondir ces points.
+
+👍 Ressenti personnel : Le contenu de cette séance était dense mais très intéressant : environnement Python, visualisation, traitement automatique et textométrie.
+Cela m’a montré toute la chaîne des outils nécessaires pour analyser un texte de manière professionnelle.
+Même si je dois encore progresser en mathématiques et en Python, je me sens de mieux en mieux équipée pour aborder les prochaines étapes du cours.
