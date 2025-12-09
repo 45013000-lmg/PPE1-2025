@@ -196,3 +196,17 @@ Nous avons également abordé la loi hypergéométrique, utilisée en textométr
 👍 Ressenti personnel : Le contenu de cette séance était dense mais très intéressant : environnement Python, visualisation, traitement automatique et textométrie.
 Cela m’a montré toute la chaîne des outils nécessaires pour analyser un texte de manière professionnelle.
 Même si je dois encore progresser en mathématiques et en Python, je me sens de mieux en mieux équipée pour aborder les prochaines étapes du cours.
+
+## Cours10
+- Cette séance a été consacrée à une présentation détaillée de la structure générale de notre projet final.
+Le professeur a expliqué toutes les étapes que nous devrons réaliser :
+choix du mot à étudier ; constitution d’un fichier de 50 URLs ; aspiration des pages avec wget/curl ; extraction du texte brut avec lynx ; filtrage des contextes par egrep ; création des tableaux (URL, code HTTP, encodage, occurrences, etc.) ; génération de nuages de mots ; création d’un concordancier ; analyse séparée pour chaque langue puis conclusion globale.
+Après cette présentation, nous avons commencé à travailler concrètement sur nos projets : choix du mot, préparation des dossiers, rédaction du fichier d’URLs, et réflexion sur les futures analyses.
+
+- La principale difficulté que j’ai rencontrée concerne la formulation de l’hypothèse.
+Je comprends qu’une hypothèse doit : être liée à un phénomène linguistique ; constituer une prédiction que l’on pourra vérifier à l’aide du corpus ; guider les analyses (occurrences, cooccurrences, nuages de mots, concordancier, etc.). Cependant, au moment de la rédiger, je trouve cela encore très abstrait.
+J’ai du mal à transformer une intuition linguistique en une hypothèse claire et testable. Cette difficulté m’a montré que je dois encore approfondir la logique méthodologique avant de définir mon hypothèse finale.
+
+- Malgré cette incertitude, cette séance m’a permis de mieux comprendre l’ensemble du workflow du projet :
+collecte → nettoyage → structuration → extraction → statistiques → visualisation → analyse.
+En avançant dans le projet, je réalise que l’hypothèse est essentielle pour orienter l’analyse et pour donner un sens aux résultats que nous allons obtenir.
