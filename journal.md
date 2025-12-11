@@ -210,3 +210,16 @@ J’ai du mal à transformer une intuition linguistique en une hypothèse claire
 - Malgré cette incertitude, cette séance m’a permis de mieux comprendre l’ensemble du workflow du projet :
 collecte → nettoyage → structuration → extraction → statistiques → visualisation → analyse.
 En avançant dans le projet, je réalise que l’hypothèse est essentielle pour orienter l’analyse et pour donner un sens aux résultats que nous allons obtenir.
+
+## Cours11
+- Cette séance a été consacrée à l’avancement du projet.
+Le cours était organisé sous forme de travail autonome : chacun avançait sur son projet, et nous pouvions poser des questions au professeur dès que nous rencontrions un problème.
+Ce fonctionnement m’a permis de clarifier plusieurs étapes techniques du projet.
+
+- J’ai terminé une première version de la page tableaux, où j’ai intégré les informations principales : URL, code HTTP, encodage, nombre d’occurrences, dump textuel, etc.
+Cependant, au cours de cette étape, j’ai rencontré plusieurs difficultés :
+certaines pages ne se redirigent pas correctement ; d’autres exigent une authentification ou des cookies, ce qui empêche l’aspiration via wget/curl ; quelques URLs renvoient des pages vides ou illisibles, ce qui bloque les étapes suivantes.
+
+- Ces problèmes m’ont montré que l’aspiration des pages n’est pas aussi simple que dans les exemples du cours.
+Il faut tester les URLs, vérifier leur accessibilité et adapter le script pour éviter les erreurs.
+Je vais donc continuer à améliorer mon projet : sélectionner de nouvelles URLs plus fiables, corriger les pages problématiques et finaliser la construction des tableaux et des contextes.
